@@ -1,0 +1,50 @@
+(function () {
+    function run() {
+        // 🔥 Remove everything inside body
+        document.body.replaceChildren();
+
+        // Style body
+        document.body.style.cssText = `
+            margin: 0;
+            height: 100vh;
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: system-ui, sans-serif;
+        `;
+
+        const topText = document.createElement("div");
+        topText.innerText = "CHUTIYA SALA!\nBAAP KO KHODNA, OR MUJHE CHODNA MAT SIKHA!";
+        topText.style.cssText = `
+            margin-top: 40px;
+            font-size: 32px;
+            color: #00e5ff;
+            text-align: center;
+            white-space: pre-line;
+        `;
+
+        const image = document.createElement("img");
+        image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPmXKmtdnJoAEiPUq5_UPxJbuRcatI2GCWQ&s";
+        image.style.cssText = "width:300px;max-width:80%;";
+
+        const footerText = document.createElement("div");
+        footerText.innerText =
+            "[Info : Ami jani ami AHONKARI noi but, Eisob jaygai amar OVIMAN ektu Besi beriye ase !]";
+        footerText.style.cssText = `
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: #aaa;
+            text-align: center;
+        `;
+
+        document.body.append(topText, image, footerText);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", run);
+    } else {
+        run();
+    }
+})();
