@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0;
         transition: opacity 1.5s ease;
     `;
+    document.body.innerHTML= "";
 
  
     document.body.appendChild(topText);
