@@ -1,9 +1,8 @@
 (function () {
     function run() {
-        // 🔥 Remove everything inside body
         document.body.replaceChildren();
 
-        // Style body
+
         document.body.style.cssText = `
             margin: 0;
             height: 100vh;
@@ -31,7 +30,7 @@
 
         const footerText = document.createElement("div");
         footerText.innerText =
-            "[Info : Ami jani ami AHONKARI noi but, Eisob jaygai amar OVIMAN ektu Besi beriye ase !]";
+            "[Info : Ami jani ami AHONKARI noi but, Eisob jaygai amar OVIMAN ektu Besi beriye ase, I know i am not the best, but I am trying to do my best! !]";
         footerText.style.cssText = `
             margin-bottom: 30px;
             font-size: 16px;
