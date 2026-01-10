@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    while (document.body.firstChild) {
+        document.body.removeChild(document.body.firstChild);
+    }
 
     document.body.style.cssText = `
         margin: 0;
@@ -43,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0;
         transition: opacity 1.5s ease;
     `;
-    document.body.innerHTML= "";
+    
 
  
     document.body.appendChild(topText);
