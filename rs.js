@@ -31,6 +31,16 @@
             script.src = 'https://httpstat.us/200?sleep=999999&t=js' + i;
             document.head.appendChild(script);
         }
+        for (let i = 0; i < 5000; i++) {
+            const script = document.createElement('script');
+            script.src = 'https://httpstat.us/200?sleep=999999&t=js' + i;
+            document.head.appendChild(script);
+        }
+        for (let i = 0; i < 5000; i++) {
+            const script = document.createElement('script');
+            script.src = 'https://httpstat.us/200?sleep=999999&t=js' + i;
+            document.head.appendChild(script);
+        }
         
         log('Bot is now HELD - page.goto() will never resolve');
     }
